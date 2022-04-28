@@ -2,7 +2,7 @@ import { Component } from "solid-js";
 
 const MainPage: Component = () => {
     return (
-        <div>item2</div>
+        <div>Main page</div>
     );
 };
 

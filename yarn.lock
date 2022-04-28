@@ -354,59 +354,59 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
-"@suid/base@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@suid/base/-/base-0.1.0.tgz#2f76c9bbf224807095f0bf4d57e5ba1532f082ee"
-  integrity sha512-Q78bjCWGpHrhaLypBffDJrvmOPlmk7xY5JDA93LbY5EA0cBpdBovgT+4Fn01J1o28m6+9G1AvLvE/UCPRW8Ikg==
+"@suid/base@0.1.1-next.4":
+  version "0.1.1-next.4"
+  resolved "https://registry.yarnpkg.com/@suid/base/-/base-0.1.1-next.4.tgz#98c3d16b9a3213e2de5a9151311d1cd77a8e38fd"
+  integrity sha512-PmW9hnmnIvXGmHFf/B37oq93E9z5C2HZg48JKeesJBgEOPqt3/1K/nBf+UhaqVRrZcmCZCgot9RSnKcEtFwj8Q==
   dependencies:
     "@popperjs/core" "^2.11.5"
-    "@suid/css" "0.1.0"
-    "@suid/system" "0.1.0"
-    "@suid/types" "0.1.0"
-    "@suid/utils" "0.1.0"
+    "@suid/css" "0.1.1-next.2"
+    "@suid/system" "0.1.1-next.4"
+    "@suid/types" "0.1.1-next.1"
+    "@suid/utils" "0.2.0-next.2"
     clsx "^1.1.1"
 
-"@suid/css@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@suid/css/-/css-0.1.0.tgz#2a247f301b1f605017b2e17031e84de538e44377"
-  integrity sha512-Z5gN1qJjHPPYcT4xz1t7kOxpZZOTnUMfk3pnhD1Vj+YFq7WyQ2UIRFTmTz3Ecm0fGUJBi5S83g/Q0oKBy7cqbQ==
+"@suid/css@0.1.1-next.2":
+  version "0.1.1-next.2"
+  resolved "https://registry.yarnpkg.com/@suid/css/-/css-0.1.1-next.2.tgz#c7846459f3ab47cde283bb5281cdbeaad1836ff1"
+  integrity sha512-ElGkVOU2hSmuBCaSrEFduvgSkHx2J2w7ZkV9YfY7ZjN+EWK52tcXH12BxHiKkncjvdXDOM0YmfB5re9e80qvKQ==
   dependencies:
-    "@suid/utils" "0.1.0"
+    "@suid/utils" "0.2.0-next.2"
 
-"@suid/material@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@suid/material/-/material-0.1.0.tgz#c967e7f2a83a6f3ab43fbdd74d22a8f16a57dcae"
-  integrity sha512-1uuU96hYAiXipq8iYE2W/IO3LZF0yVUcnsqpTsLH63pZAyGfpUUwSbKb1KVQdNbgc340WRtSgq1Y83X49K/rWQ==
+"@suid/material@0.2.0-next.5":
+  version "0.2.0-next.5"
+  resolved "https://registry.yarnpkg.com/@suid/material/-/material-0.2.0-next.5.tgz#fa1d0399732164853639a6140498e7f208bd07ea"
+  integrity sha512-gKBvmKifEThYyor6ykJ37mCZtb/MMolyG7maTToCcEXx0UwQZh9PRqh8mXQOXTQ4jCfTzLUvw8XsU7w0NKx7KQ==
   dependencies:
-    "@suid/base" "0.1.0"
-    "@suid/css" "0.1.0"
-    "@suid/system" "0.1.0"
-    "@suid/types" "0.1.0"
-    "@suid/utils" "0.1.0"
+    "@suid/base" "0.1.1-next.4"
+    "@suid/css" "0.1.1-next.2"
+    "@suid/system" "0.1.1-next.4"
+    "@suid/types" "0.1.1-next.1"
+    "@suid/utils" "0.2.0-next.2"
     clsx "^1.1.1"
 
-"@suid/system@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@suid/system/-/system-0.1.0.tgz#ee53b06f85a10c77813730590d7057643d212fbe"
-  integrity sha512-d1oAng7dvEZOLqcaMUolKem+ntTiFeNy1wgHf/g4Zb1C2IgMwdzVUcAJsPcb+QYfWbEUoWrrqWFzxZIdXyBuCw==
+"@suid/system@0.1.1-next.4":
+  version "0.1.1-next.4"
+  resolved "https://registry.yarnpkg.com/@suid/system/-/system-0.1.1-next.4.tgz#94c8914a49ab9f87546cb1d735f8b74fac342a91"
+  integrity sha512-e7fub85fERSaLCSAWqpZLEgaESkiTguouTgrklKhubJ7Xki9cO9r5nhZ0JcKTfrK6uGn4g/P5Zbh47YfXChLsA==
   dependencies:
-    "@suid/css" "0.1.0"
-    "@suid/types" "0.1.0"
-    "@suid/utils" "0.1.0"
+    "@suid/css" "0.1.1-next.2"
+    "@suid/types" "0.1.1-next.1"
+    "@suid/utils" "0.2.0-next.2"
     clsx "^1.1.1"
     csstype "^3.0.11"
 
-"@suid/types@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@suid/types/-/types-0.1.0.tgz#63f6393f1585a8f2027d3dc7ac55b0f23f6aefb1"
-  integrity sha512-06cI2OF7rI7m66BASHTGWGrpuk2RPSdnLSs5Ynrd/SNmsoMWRhE2chIqujIxXtg6Xl2VJidnl1QM61XeMfVipQ==
+"@suid/types@0.1.1-next.1":
+  version "0.1.1-next.1"
+  resolved "https://registry.yarnpkg.com/@suid/types/-/types-0.1.1-next.1.tgz#873051f2f6aab6b86d57fbcd565257107392794e"
+  integrity sha512-UYjtXRzLBICd/UMLLTiLX+BE5rHRajSJM51Lilsdg8T7NUuilBXEzAlB/L55SczlDTQxB+xFQQ5/17Hv1B/bFw==
 
-"@suid/utils@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@suid/utils/-/utils-0.1.0.tgz#9fec98cdf0299e744e4b6361d221687381140257"
-  integrity sha512-3vOwMQIrKsTdHv5AqipRI2+L6+7Oi8TyWZKyw5FU7JIvXmd0LEwLuICvmXMuj8yZ+IshGudBJHDLVaCv0wvPIw==
+"@suid/utils@0.2.0-next.2":
+  version "0.2.0-next.2"
+  resolved "https://registry.yarnpkg.com/@suid/utils/-/utils-0.2.0-next.2.tgz#c13bf8fc6109a296df4f6bd05b592d5a7431f376"
+  integrity sha512-qHXbjVVPh5qXW3ngdOiXtozV87n73081W6ZAzfyZmuYRzx8oXO4nqAhSd9azW3WXfAvR8dkcIybhpnslOum/VA==
   dependencies:
-    "@suid/types" "0.1.0"
+    "@suid/types" "0.1.1-next.1"
 
 "@types/json-schema@^7.0.9":
   version "7.0.11"

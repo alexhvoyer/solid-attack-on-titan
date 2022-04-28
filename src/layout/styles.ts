@@ -16,3 +16,9 @@ export const StyledToolbar = styled(Toolbar)({
 export const StyledTypography = styled(Typography)({
     gridArea: 'label'
 });
+
+export const ContentWrapper = styled('div')({
+    width: '888px',
+    marginLeft: 'auto',
+    marginRight: 'auto'
+});

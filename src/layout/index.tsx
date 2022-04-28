@@ -2,13 +2,17 @@ import { children, Component, For } from "solid-js";
 import AppBar from "@suid/material/AppBar";
 import Button from "@suid/material/Button";
 
-import { MainWrapper, StyledToolbar, StyledTypography } from "./styles";
+import { ContentWrapper, MainWrapper, StyledToolbar, StyledTypography } from "./styles";
 import { Link } from "solid-app-router";
 
 const buttonsConfig = [
     {
         name: 'Persons',
         link: '/persons'
+    },
+    {
+        name: 'Titans',
+        link: '/titans',
     },
     {
         name: 'Arts',
@@ -39,7 +43,9 @@ const Layout: Component = (props) => {
 
                 </StyledToolbar>
             </AppBar>
-            {c()}
+            <ContentWrapper>
+                {c()}
+            </ContentWrapper>
         </MainWrapper>
     );
 };
