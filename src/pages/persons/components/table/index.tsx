@@ -52,7 +52,7 @@ export const PersonsTable: Component<Props> = (props) => {
                         <TableRow
                             sx={{ cursor: 'pointer' }}
                             hover
-                            onClick={() => navigate(String(character.id))}
+                            onClick={[navigate, String(character.id)]}
                         >
                             <Index each={rowConfig}>
                                 {(item) => (

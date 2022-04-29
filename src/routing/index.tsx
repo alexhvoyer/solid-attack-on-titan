@@ -5,11 +5,15 @@ import Layout from "@/layout";
 const routes = [
     {
         path: '/',
-        component: lazy(() => import("../pages/main"))
+        component: lazy(() => import("@/pages/main"))
     },
     {
         path: '/persons',
-        component: lazy(() => import('../pages/persons'))
+        component: lazy(() => import('@/pages/persons'))
+    },
+    {
+        path: '/persons/:id',
+        component: lazy(() => import('@/pages/person'))
     }
 ];
 
