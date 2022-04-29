@@ -31,6 +31,7 @@ const Layout: Component = (props) => {
                             Attack on Titan
                         </S.StyledTypography>
                     </Link>
+                    <div />
                     <For each={buttonsConfig}>
                         {(item) => (
                             <Link href={item.link}>

@@ -1,8 +1,10 @@
 import { createResource, createSignal } from "solid-js";
 import { CharacterListResponse } from "@/types/characters/dto";
 import TextField from "@suid/material/TextField";
-import { PersonsTable } from "./components/table";
 import { ResourceRenderer } from "@/components/resource";
+import Typography from "@suid/material/Typography";
+import { PersonsTable } from "./components/table";
+import { S } from "./styles";
 
 const fetchAll = async (search: string): Promise<CharacterListResponse> => {
     const url = '/api/v1/characters';
@@ -19,13 +21,19 @@ const Persons = () => {
 
     return (
         <div>
-            <div>Persons</div>
-            <TextField
-                label="Name"
-                variant="standard"
-                onChange={(e) => setSearch(e.currentTarget.value)}
-                value={search()}
-            />
+            <S.TitleWrapper>
+                <Typography variant="h5" align="center">Persons</Typography>
+            </S.TitleWrapper>
+
+            <S.SearchWrapper>
+                <Typography>Search: </Typography>
+                <TextField
+                    label="Name"
+                    variant="standard"
+                    onChange={(e) => setSearch(e.currentTarget.value)}
+                    value={search()}
+                />
+            </S.SearchWrapper>
             <ResourceRenderer
                 data={data}
                 dataRenderer={(data) => (

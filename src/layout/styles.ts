@@ -9,14 +9,11 @@ export namespace S {
 
     export const StyledToolbar = styled(Toolbar)({
         display: 'grid',
-        gridTemplateAreas: '"label . button1 button2"',
-        gridTemplateColumns: 'auto 1fr 8em 8em',
+        gridTemplateColumns: 'auto 1fr repeat(3, 6em)',
         gap: '1em',
     });
 
-    export const StyledTypography = styled(Typography)({
-        gridArea: 'label'
-    });
+    export const StyledTypography = styled(Typography)({});
 
     export const ContentWrapper = styled('div')({
         width: '888px',
