@@ -1,7 +1,9 @@
-import { ResourceRenderer } from "@/components/resource";
-import { Character } from "@/types/characters/entity";
+import { createResource, Index } from "solid-js";
 import { useParams } from "solid-app-router";
-import { createResource } from "solid-js";
+import { ResourceRenderer } from "@/components/resource";
+import { fieldsConfig, fieldNameConfig } from "@/constants/domain";
+import { Character } from "@/types/characters/entity";
+import { S } from "./styles";
 
 const fetchPerson = async (id: string): Promise<Character> => {
     const url = `/api/v1/characters/${id}`;
@@ -17,7 +19,16 @@ const Person = () => {
         <ResourceRenderer
             data={person}
             dataRenderer={(person) => (
-                <div>{person?.first_name}</div>
+                <S.StyledSection>
+                    <Index each={fieldsConfig}>
+                        {(item, index) => person && (
+                            <S.FieldWrapper>
+                                <S.StyledFieldName>{fieldNameConfig[index]}: </S.StyledFieldName>
+                                <span>{person[item()] || '-'}</span>
+                            </S.FieldWrapper>
+                        )}
+                    </Index>
+                </S.StyledSection>
             )}
         />
     )

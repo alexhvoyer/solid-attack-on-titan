@@ -1,3 +1,4 @@
+import { fieldsConfig, fieldNameConfig } from "@/constants/domain";
 import { Character } from "@/types/characters/entity";
 import Table from "@suid/material/Table";
 import TableBody from "@suid/material/TableBody";
@@ -6,30 +7,6 @@ import TableHead from "@suid/material/TableHead";
 import TableRow from "@suid/material/TableRow";
 import { useNavigate } from "solid-app-router";
 import { Component, For, Index } from "solid-js";
-
-const headConfig = [
-    'Id',
-    'First name',
-    'Last name',
-    'Species',
-    'Age',
-    'Height',
-    'Residence',
-    'Status',
-    'Alias'
-];
-
-const rowConfig = [
-    'id',
-    'first_name',
-    'last_name',
-    'species',
-    'age',
-    'height',
-    'residence',
-    'status',
-    'alias'
-] as const;
 
 type Props = {
     characters?: Character[];
@@ -40,7 +17,7 @@ export const PersonsTable: Component<Props> = (props) => {
     return (
         <Table stickyHeader>
             <TableHead>
-                <Index each={headConfig}>
+                <Index each={fieldNameConfig}>
                     {(item) => (
                         <TableCell>{item()}</TableCell>
                     )}
@@ -54,7 +31,7 @@ export const PersonsTable: Component<Props> = (props) => {
                             hover
                             onClick={[navigate, String(character.id)]}
                         >
-                            <Index each={rowConfig}>
+                            <Index each={fieldsConfig}>
                                 {(item) => (
                                     <TableCell>
                                         {character[item()] || '-'}

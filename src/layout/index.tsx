@@ -27,9 +27,7 @@ const Layout: Component = (props) => {
             <AppBar position="static">
                 <S.StyledToolbar>
                     <Link href="/">
-                        <S.StyledTypography variant="h6">
-                            Attack on Titan
-                        </S.StyledTypography>
+                        <S.StyledImg src="/src/assets/logo.png" />
                     </Link>
                     <div />
                     <For each={buttonsConfig}>

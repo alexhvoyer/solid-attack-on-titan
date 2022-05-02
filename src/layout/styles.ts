@@ -1,5 +1,4 @@
 import Toolbar from "@suid/material/Toolbar";
-import Typography from "@suid/material/Typography";
 import styled from "@suid/system/styled";
 
 export namespace S {
@@ -13,12 +12,15 @@ export namespace S {
         gap: '1em',
     });
 
-    export const StyledTypography = styled(Typography)({});
-
-    export const ContentWrapper = styled('div')({
+    export const ContentWrapper = styled('article')({
         width: '888px',
         marginLeft: 'auto',
         marginRight: 'auto',
         minHeight: '92vh'
+    });
+
+    export const StyledImg = styled('img')({
+        maxHeight: '50px',
+        maxWidth: '100%'
     });
 }
