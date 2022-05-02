@@ -12,4 +12,9 @@ export namespace S {
     export const StyledFieldName = styled('span')({
         fontWeight: 600
     });
+
+    export const ButtonsWrapper = styled('div')({
+        display: 'flex',
+        justifyContent: 'space-between'
+    });
 }

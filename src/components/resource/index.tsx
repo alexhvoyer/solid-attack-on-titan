@@ -1,6 +1,5 @@
-import CircularProgress from "@suid/material/CircularProgress";
 import { JSX, Match, Resource, Switch } from "solid-js";
-import { S } from "./styled";
+import { Loader } from "../loader";
 
 type Props<T> = {
     data: Resource<T>;
@@ -11,9 +10,7 @@ export const ResourceRenderer = <T,>(props: Props<T>) => {
     return (
         <Switch fallback={<div>Error</div>}>
             <Match when={props.data.loading}>
-                <S.LoaderWrapper>
-                    <CircularProgress />
-                </S.LoaderWrapper>
+                <Loader />
             </Match>
             <Match when={props.data()}>
                 {props.dataRenderer(props.data())}
