@@ -14,6 +14,10 @@ const routes = [
     {
         path: '/persons/:id',
         component: lazy(() => import('@/pages/person'))
+    },
+    {
+        path: "*",
+        component: lazy(() => import('@/pages/errors/404'))
     }
 ];
 

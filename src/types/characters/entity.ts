@@ -8,4 +8,5 @@ export type Character = {
     residence: string;
     status: string;
     alias?: string;
+    error?: string;
 };

@@ -1,15 +1,14 @@
 import { createEffect, createResource, createSignal, Index, Show, startTransition } from "solid-js";
 import { useNavigate, useParams } from "solid-app-router";
+import Button from "@suid/material/Button";
 import { fieldsConfig, fieldNameConfig } from "@/constants/domain";
 import { Character } from "@/types/characters/entity";
-import Button from "@suid/material/Button";
 import { Loader } from "@/components/loader";
 import { S } from "./styles";
 
 const fetchPerson = async (id: string): Promise<Character> => {
     const url = `/api/v1/characters/${id}`;
-    const result = await fetch(url);
-    return result.json();
+    return (await fetch(url)).json();
 };
 
 const Person = () => {
@@ -20,6 +19,12 @@ const Person = () => {
 
     createEffect(() => {
         startTransition(() => setId(params.id));
+    });
+
+    createEffect(() => {
+        if (person()?.error) {
+            navigate('/404');
+        }
     });
 
     const handleGoNext = () => navigate(`/persons/${Number(params.id) + 1}`);
