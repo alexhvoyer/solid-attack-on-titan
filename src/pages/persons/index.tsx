@@ -7,9 +7,9 @@ import { PersonsTable } from "./components/table";
 import { S } from "./styles";
 
 const fetchAll = async (search: string): Promise<CharacterListResponse> => {
-    const url = '/api/v1/characters';
+    const url = '/api/characters/';
     const query = new URLSearchParams({
-        query: search
+        name: search
     });
     const result = await fetch(`${url}?` + query);
     return result.json();

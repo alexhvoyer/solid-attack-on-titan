@@ -7,7 +7,7 @@ import { Loader } from "@/components/loader";
 import { S } from "./styles";
 
 const fetchPerson = async (id: string): Promise<Character> => {
-    const url = `/api/v1/characters/${id}`;
+    const url = `/api/characters/${id}`;
     return (await fetch(url)).json();
 };
 
