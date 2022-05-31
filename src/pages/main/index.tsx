@@ -9,7 +9,7 @@ const MainPage: Component = () => {
                 <Typography variant="h3" align="center">Welcome to Attack on Titan Library!</Typography>
             </S.TitleWrapper>
             <picture>
-                <S.StyledImg src="/src/assets/art.jpg" alt="Attack on Titan Art" />
+                <S.StyledImg src="/api/static/art.jpg" alt="Attack on Titan Art" />
             </picture>
         </div>
     );
