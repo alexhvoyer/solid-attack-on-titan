@@ -2,14 +2,14 @@ import Button from "@suid/material/Button";
 import { useNavigate } from "solid-app-router";
 import { S } from "../styles"
 
-const Error404 = () => {
+const ErrorMain = () => {
     const navigate = useNavigate();
     return (
         <S.MainWrapper>
-            <div>Oooops! There is no such page!</div>
+            <div>Oooops! An error occured!</div>
             <Button onClick={[navigate, '/']}>Go to main page</Button>
         </S.MainWrapper>
     );
 };
 
-export default Error404;
+export default ErrorMain;

@@ -1,3 +1,5 @@
+import { Titan } from "../titans/entity";
+
 export type Character = {
     id: number;
     first_name: string;
@@ -9,4 +11,6 @@ export type Character = {
     status: string;
     alias?: string;
     error?: string;
+
+    titan: Titan | null;
 };
